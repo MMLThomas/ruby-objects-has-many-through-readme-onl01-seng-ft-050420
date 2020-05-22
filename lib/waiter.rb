@@ -1,6 +1,6 @@
 class Waiter
-  attr_accessor :years_of_experience
-  attr_reader :name
+  attr_accessor :years_of_experience, 
+  attr_reader 
   
   @@all = []
   
