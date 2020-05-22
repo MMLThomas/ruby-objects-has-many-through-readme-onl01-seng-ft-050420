@@ -22,8 +22,7 @@ class Customer
   end
   
   def waiters
-    meals.select{|meal| meal.waiter}
-    
+    self.meals.select{|meal| meal.waiter}
   end
   
 end
