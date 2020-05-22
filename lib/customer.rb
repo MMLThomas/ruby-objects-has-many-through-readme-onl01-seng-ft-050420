@@ -1,3 +1,5 @@
+require 'pry'
+
 class Customer
   attr_reader :name, :age
   
@@ -22,7 +24,10 @@ class Customer
   end
   
   def waiters
-    meals.select{|meal| Waiter.all.select{|w| w == meal.waiter}}
+    meals.select do |meal| 
+      waiters = meal.waiter
+      waiters
+    end
   end
   
 end
