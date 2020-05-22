@@ -18,11 +18,11 @@ class Customer
   end
   
   def meals
-    Meal.all.collect{|meal| meal.customer == self}
+    Meal.all.select{|meal| meal.customer == self}
   end
   
   def waiters
-    meals.collect{|meal| meal.waiter}
+    meals.select{|meal| meal.waiter}
   end
   
 end
