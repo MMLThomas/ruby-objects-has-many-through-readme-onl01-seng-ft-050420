@@ -24,9 +24,8 @@ class Customer
   end
   
   def waiters
-    meals.collect do |meal| 
-      meal.waiter
-    end
+    meals.collect{|meal| meal.waiter}
+    
   end
   
 end
